@@ -1,0 +1,63 @@
+<!--
+  Copyright 2013 Alfredo Serafini (http://seralf.it)
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<dataConfig>
+
+<script><![CDATA[
+function console(row) {
+	java.lang.System.out.println("\n\n##### READING FILE: \n");
+	java.lang.System.out.println("\n\n"+row.toString()+"\n\n");
+	return row;
+}
+var id = 1;
+function GenerateId(row) {
+	row.put('id', (id ++).toFixed());
+	return row;
+}
+
+]]></script>
+
+	<dataSource name="fds" type="FileDataSource" encoding="UTF-8" />
+	<document>
+		
+		<entity name="files" 
+			dataSource="null" 
+			rootEntity="false" 
+			processor="FileListEntityProcessor" 
+			baseDir="${solr.solr.home}/../../resources/wgarts/csv" 
+			fileName=".*\.csv" 
+			onError="abort" 
+			newerThan="${dataimporter.last_index_time}"    
+			transformer="script:console" 
+			recursive="true">
+		
+		<entity name="csv_file" 
+			processor="LineEntityProcessor" 
+			url="${files.fileAbsolutePath}" 
+			dataSource="fds" 
+			transformer="RegexTransformer">
+			
+			<field column="rawLine" 
+				regex="^(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*)$" 
+				groupNames="AUTHOR,BORN-DIED,TITLE,DATE,TECHNIQUE,LOCATION,URL,FORM,TYPE,SCHOOL,TIJMELINE" />
+			
+			<field column="URL" name="uri"  />
+			
+		</entity>
+				
+		</entity>
+	</document>
+
+</dataConfig>

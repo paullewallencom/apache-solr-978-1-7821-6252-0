@@ -1,0 +1,62 @@
+<!--
+  Copyright 2013 Alfredo Serafini (http://seralf.it)
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<dataConfig>
+
+<script><![CDATA[
+function capitalize(word) {
+	if(word!=undefined){
+		var text = word.toString().trim();
+		var head = text.substring(0,1).toUpperCase();
+		var tail = text.substring(1).toLowerCase();
+		var capitalized = head + tail;
+		return capitalized;
+	}
+	else return '';
+}
+function normalizeArtistEntity(row) {
+	//row.put('ORIGINAL_ROW', row.toString());
+	var vals = row.get('artist').toString().split(',');
+	var artist_entity = capitalize(vals[1]) + " " + capitalize(vals[0]);
+	row.put('artist_entity', artist_entity);
+ 	//row.put('ROW_CLASS', row.getClass());
+	return row;
+}
+function normalizeUri(row) {
+	var text = row.get('URL').toString();
+	// remove the trailing '#'
+	var uri = text.split('#')[1];
+	row.put('uri', uri);
+	return row;
+}
+var id = 1;
+function GenerateId(row) {
+	row.put('id', (id ++).toFixed());
+	return row;
+}
+]]></script>
+
+
+	<dataSource type="JdbcDataSource" driver="org.sqlite.JDBC" url="jdbc:sqlite:${solr.solr.home}/../../resources/wgarts/db/WebGalleryOfArts.sqlite" batchSize="1" />
+
+	<!-- The first example uses a single SQL JOIN query -->
+	<document name="painting_document">
+		<entity name="painting" pk="uri" transformer="script:normalizeArtistEntity, script:normalizeUri, script:GenerateId" query="SELECT A.AUTHOR AS artist, P.TITLE AS title, A.'BORN-DIED', P.LOCATION AS city, P.TYPE AS type, P.URL, P.TECHNIQUE AS subject FROM authors AS A JOIN paintings AS P ON (A.ID=P.AUTHOR_ID) WHERE (P.FORM='painting')">
+			<field column="entity_type" template="painting" />
+			<field column="entity_source" template="Web Gallery Of Art" />
+		</entity>
+	</document>
+
+</dataConfig>

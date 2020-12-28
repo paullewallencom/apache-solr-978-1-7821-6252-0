@@ -1,0 +1,13 @@
+<add xmlns:dc="http://purl.org/dc/elements/1.1/" overwrite="true">
+
+	<doc>
+		<field name="id">0000</field>
+
+		<field name="polygon_geo">POLYGON((-10 30, -40 40, -10 -20, 40 20, 0 0, -10 30))</field>
+		<field name="box_geo">-74.093 41.042 -69.347 44.558</field>
+		<field name="museum">http://TEST/A_MUSEUM</field>
+		<field name="description"> This is an example data</field>
+		
+	</doc>
+
+</add>

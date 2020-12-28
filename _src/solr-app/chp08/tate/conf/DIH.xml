@@ -1,0 +1,83 @@
+<!--
+  Copyright 2013 Alfredo Serafini (http://seralf.it)
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<dataConfig>
+
+<script><![CDATA[
+function fixCSV(row) {
+	var line_fixed = row.get('rawLine')
+		.replaceAll(",\\s+","::::").replaceAll(",",";")
+		.replaceAll("::::",",").replaceAll("\"(.*?)\"","$1");
+	row.put('rawLine_fixed', line_fixed);
+	java.lang.System.out.println("\n\n#####FIXED:\n"+line_fixed+"\n\n");
+	return row;
+}
+
+function console(row) {
+	java.lang.System.out.println("\n\n######### ROWS:\n"+row.keySet()+"\n\n");
+	return row;
+}
+var id = 1;
+function GenerateId(row) {
+	row.put('id', (id ++).toFixed());
+	return row;
+}
+]]></script>
+
+	<dataSource 
+		name="source_url" type="URLDataSource" 
+		baseUrl="https://raw.github.com" 
+		encoding="UTF-8" 
+		connectionTimeout="5000" readTimeout="10000" />
+		
+	<document>
+
+		<entity 
+			name="artist" 
+			processor="LineEntityProcessor" 
+			url="/tategallery/collection/master/artist_data.csv" 
+			stream="true"
+			dataSource="source_url" 
+			onError="skip" 
+			newerThan="${dataimporter.last_index_time}"
+			transformer="TemplateTransformer,script:fixCSV,RegexTransformer,script:console">
+
+			<field column="rawLine_fixed"
+				regex="^(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*);(.*)$"
+				groupNames="id,name,gender,dates,yearOfBirth,yearOfDeath,placeOfBirth,placeOfDeath,url" />
+			
+			<field column="url" name="uri" />
+			<field column="doc_type" template="artist" />
+			
+			<entity name="dbpedia_lookup" 
+			        processor="XPathEntityProcessor" 
+			        stream="true" 
+			        forEach="/ArrayOfResult/Result" 
+			        onError="skip" 
+			        rootEntity="true" 
+			        url="http://lookup.dbpedia.org/api/search.asmx/KeywordSearch?QueryString=${artist.name}"
+			        transformer="script:console" >
+			
+					<field column="dbpedia_uri" xpath="/ArrayOfResult/Result/URI" commonField="true" />
+					<field column="dbpedia_description" xpath="/ArrayOfResult/Result/Description" commonField="true" />
+					<field column="doc_type" template="dbpedia_lookup" />
+			
+			</entity>
+		
+		</entity>
+
+	</document>
+
+</dataConfig>

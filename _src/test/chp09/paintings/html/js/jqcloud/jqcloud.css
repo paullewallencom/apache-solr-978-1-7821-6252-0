@@ -1,0 +1,124 @@
+/* fonts */
+section.jqcloud {
+	font-family: "Helvetica", "Arial", sans-serif;
+	line-height: 110%;
+}
+
+section.jqcloud {
+	overflow: hidden;
+	position: relative;
+}
+
+section.jqcloud span {
+	padding: 0;
+}
+
+section.jqcloud a {
+	font-size: inherit;
+	text-decoration: none;
+}
+
+section.jqcloud span.w10 {
+	font-size: 550%;
+}
+
+section.jqcloud span.w9 {
+	font-size: 500%;
+}
+
+section.jqcloud span.w8 {
+	font-size: 450%;
+}
+
+section.jqcloud span.w7 {
+	font-size: 400%;
+}
+
+section.jqcloud span.w6 {
+	font-size: 350%;
+}
+
+section.jqcloud span.w5 {
+	font-size: 300%;
+}
+
+section.jqcloud span.w4 {
+	font-size: 250%;
+}
+
+section.jqcloud span.w3 {
+	font-size: 200%;
+}
+
+section.jqcloud span.w2 {
+	font-size: 150%;
+}
+
+section.jqcloud span.w1 {
+	font-size: 100%;
+}
+
+/* colors */
+section.jqcloud {
+	color: #000;
+}
+
+section.jqcloud span a {
+	color: #777;
+}
+
+section.jqcloud span a:hover {
+	color: #A00;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+/*
+section.jqcloud span a {
+	color: inherit;
+}
+
+section.jqcloud span a:hover {
+	color: #F00;
+}
+
+section.jqcloud span.w10 {
+	color: #DDD;
+}
+
+section.jqcloud span.w9 {
+	color: #404;
+}
+
+section.jqcloud span.w8 {
+	color: #405;
+}
+
+section.jqcloud span.w7 {
+	color: #066;
+}
+
+section.jqcloud span.w6 {
+	color: #077;
+}
+
+section.jqcloud span.w5 {
+	color: #C55;
+}
+
+section.jqcloud span.w4 {
+	color: #C44;
+}
+
+section.jqcloud span.w3 {
+	color: #C33;
+}
+
+section.jqcloud span.w2 {
+	color: #C22;
+}
+
+section.jqcloud span.w1 {
+	color: #C00;
+}
+*/

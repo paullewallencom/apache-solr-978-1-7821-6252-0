@@ -1,0 +1,1 @@
+scala -savecompiled createSolrDocs.scala ../data/downloaded/ ../data/solr_docs dbpediaToPost.xslt

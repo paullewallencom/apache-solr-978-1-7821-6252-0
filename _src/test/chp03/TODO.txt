@@ -1,0 +1,6 @@
+* write the windows version for the scripts
+
+add parameters:
+	- number of max urls
+	- wiki-xml dir
+	- post-xml dir

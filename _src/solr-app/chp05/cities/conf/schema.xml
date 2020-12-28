@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!--
+  Copyright 2013 Alfredo Serafini (http://seralf.it)
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<schema name="cities" version="1.1">
+
+	<types>
+		<fieldtype name="string" class="solr.StrField" />
+		<fieldType name="long" class="solr.TrieLongField" />
+		<fieldType name="tdouble" class="solr.TrieDoubleField" />
+		<fieldType name="location" class="solr.LatLonType" subFieldSuffix="_lat_lon" />
+		<fieldType name="text" class="solr.TextField" positionIncrementGap="100">
+			<analyzer>
+				<charFilter class="solr.MappingCharFilterFactory" mapping="mapping-ISOLatin1Accent.txt" />
+				<tokenizer class="solr.StandardTokenizerFactory" />
+				<filter class="solr.LowerCaseFilterFactory" />
+			</analyzer>
+		</fieldType>
+	</types>
+
+	<fields>
+		<field name="id" type="long" required="true" />
+		<field name="city" type="text" required="true" indexed="true" stored="true" />
+		<dynamicField name="*" type="string" multiValued="false" indexed="true" stored="true" />
+		<field name="coordinates" type="location" indexed="true" stored="true" />
+		<dynamicField name="*_lat_lon"  type="tdouble" indexed="true"  stored="true"/>
+		
+	</fields>
+
+	<uniqueKey>id</uniqueKey>
+
+</schema>
+

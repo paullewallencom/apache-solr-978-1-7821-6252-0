@@ -1,0 +1,12 @@
+<add>
+	<doc>
+		<field name="id">test DOC1</field>
+		<field name="name">this is an example document inserted by cURL (1)</field>
+		<field name="type">test_document</field>
+	</doc>
+	<doc>
+		<field name="id">test DOC2</field>
+		<field name="name">this is an example document inserted by cURL (1)</field>
+		<field name="type">test_document</field>
+	</doc>
+</add>

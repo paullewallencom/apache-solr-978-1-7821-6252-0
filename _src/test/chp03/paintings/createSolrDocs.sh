@@ -1,0 +1,1 @@
+scala -savecompiled createSolrDocs.scala ../../../resources/dbpedia_paintings/downloaded/ ../../../resources/dbpedia_paintings/solr_docs/ dbpediaToPost.xslt

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  Copyright 2013 Alfredo Serafini (http://seralf.it)
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<config>
+
+	<luceneMatchVersion>LUCENE_42</luceneMatchVersion>
+
+	<directoryFactory name="DirectoryFactory" class="solr.MMapDirectoryFactory" />
+
+	<codecFactory name="CodecFactory" class="solr.SchemaCodecFactory" />
+
+	<requestHandler name="standard" class="solr.StandardRequestHandler" default="true" />
+
+	<lib dir="../../../solr/contrib/clustering/lib/" regex=".*\.jar"></lib>
+	<lib dir="../../../solr/dist/" regex=".*solr-clustering-.*\.jar"></lib>
+
+	<requestHandler name="/admin/" class="org.apache.solr.handler.admin.AdminHandlers" />
+	<admin>
+		<defaultQuery>*:*</defaultQuery>
+	</admin>
+
+	<searchComponent name="clustering" enable="true" class="solr.clustering.ClusteringComponent">
+		<lst name="engine">
+			<str name="name">default</str>
+			<str name="carrot.algorithm">org.carrot2.clustering.lingo.LingoClusteringAlgorithm</str>
+			<!-- org.carrot2.clustering.stc.STCClusteringAlgorithm org.carrot2.clustering.kmeans.BisectingKMeansClusteringAlgorithm -->
+			<str name="LingoClusteringAlgorithm.desiredClusterCountBase">4</str>
+			<!-- <str name="carrot.lexicalResourcesDir">clustering/carrot2</str> -->
+			<str name="MultilingualClustering.defaultLanguage">ENGLISH</str>
+		</lst>
+		<lst name="engine">
+			<str name="name">stc</str>
+			<str name="carrot.algorithm">org.carrot2.clustering.stc.STCClusteringAlgorithm</str>
+		</lst>
+	</searchComponent>
+
+	<requestHandler name="/clustering" class="solr.SearchHandler">
+		<lst name="defaults">
+			<bool name="clustering">on</bool>
+			<bool name="clustering.results">true</bool>
+			<str name="clustering.engine">default</str>
+			<!-- Solr-to-Carrot2 field mapping. -->
+			<str name="carrot.url">uri</str>
+			<str name="carrot.title">uri</str>
+			<str name="carrot.snippet">fullText</str>
+		</lst>
+		<arr name="last-components">
+			<str>clustering</str>
+		</arr>
+	</requestHandler>
+
+	<updateHandler class="solr.DirectUpdateHandler2">
+		<updateLog>
+			<str name="dir">${solr.ulog.dir:}</str>
+		</updateLog>
+		<autoCommit>
+			<maxTime>100</maxTime>
+			<maxDoc>200</maxDoc>
+			<openSearcher>false</openSearcher>
+		</autoCommit>
+	</updateHandler>
+
+</config>
+

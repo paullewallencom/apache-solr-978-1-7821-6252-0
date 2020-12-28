@@ -1,0 +1,1 @@
+curl -X POST "http://localhost:8983/solr/basic/update?commit=true" -H "Content-Type: text/xml" --data-binary '<add><doc><field name="id">testdoc</field><field name="name">this is an example document, used to test the add of a document for the default index in chapter 1</field><field name="type">what document type?</field></doc></add>'

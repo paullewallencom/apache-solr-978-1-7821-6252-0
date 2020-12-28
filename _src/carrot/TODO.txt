@@ -1,0 +1,49 @@
+
+
+http://wiki.apache.org/solr/UniqueKey
+http://wiki.apache.org/solr/ExtractingRequestHandler
+
+
+
+
+EXTRACT PARAMETERS
+fmap.<source_field>=<target_field>
+boost.<fieldname>=<float>
+uprefix=<prefix>
+defaultField=<Field Name>
+extractOnly=true|false
+resource.name=<File Name>
+capture=<Tika XHTML NAME>
+captureAttr=true|false
+xpath=<XPath expression>
+lowernames=true|false
+literalsOverride=true|false
+resource.password=<password>
+passwordsFile=<file name>
+
+----
+
+When an index is  defined, Solr exposes for it a set of REST api. The CoreAdminHandler component is the underlying tool that handle the path /admin/cores, and it can offer different actions, including the possibility to create indexes on the fly and save the new configuration. We don't need this, so we decided to have the definition not persistent: this means that we could only define or update the core via file. When persistent, every modification request by api produces also an update in the files.
+If you are interested on read more on this and on some very useful general property tha can be used in the solr.xml file, please take a look at:
+http://docs.lucidworks.com/display/solr/Core+Admin+and+Configuring+solr.xml
+
+----
+
+Add documents incrementally. You do not rebuild the index from scratch but want to add new documents periodically. You may add the same document twice and it will only be stored once.
+An example is an RSS feed from a blog: the RSS feed will be polled, therefore the same article may appear more than once.
+Do statistical analysis on indexed data.
+If the index is large, you might want to pick a subset for your research. A wildcard search on the key field does this.
+Share document identity with other database systems in "vertical partition" style.
+As an example, store only index data but not original fields for large documents. To fetch documents found in Solr, you will need to store the same unique key in both the index and the database.
+Change definition of document identity.
+Use cases change, and you may want to change the identity of the documents. For example, an RSS feed for videos might change to give different entries for the same video in different sizes. You may decide that the different entries are really the same document.
+There is a saying in database design:data sticks where it lands. Once you store data in some format and container, it is very hard to change this decision. By adding a layer of indirection in the SOLR schema's identity, you give yourself the ability to change the innate identity of the document.
+Multiple queries about the same document, with document id saved for future reference.
+Delete documents. (Though you can also delete documents matching a query, rather than by unique key value.)
+If you use DistributedSearch, you need a unique key. As an added benefit, if the same document (determined by unique key) ends up indexed in multiple shards, then only one of the docs will get returned in user's query results.
+Use cases which require a unique key generated from data in the document
+
+Allow different database systems to create identity keys that work in other systems.
+The documents may come from multiple sources, and be stored in multiple places. There may not be one convenient place in the indexing path to create a unique id. The different sources will need to separately implement the same algorithm. The key should be a short unique string (see UUID below).
+
+<fieldtype name="binary" class="solr.BinaryField"/> 

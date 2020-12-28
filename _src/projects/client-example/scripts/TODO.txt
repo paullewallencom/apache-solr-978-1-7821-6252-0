@@ -1,0 +1,4 @@
+add example for:
+	- JRuby
+	- scala
+	- PHP

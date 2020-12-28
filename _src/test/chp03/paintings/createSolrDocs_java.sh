@@ -1,0 +1,1 @@
+java -cp .:./lib/scala-library.jar:createSolrDocs.jar Main ../../../resources/dbpedia_paintings/downloaded/ ../../../resources/dbpedia_paintings/solr_docs dbpediaToPost.xslt

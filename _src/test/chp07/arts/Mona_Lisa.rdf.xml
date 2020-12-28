@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
+	xmlns:dbpprop="http://dbpedia.org/property/"
+	xmlns:ns8="http://www.w3.org/ns/prov#" >
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Mona_Lisa">
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/PaintingsOfTheLouvre" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/LeonardoDaVinciPaintings" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/1500sPaintings" />
+    <owl:sameAs rdf:resource="http://ko.dbpedia.org/resource/모나리자" />
+    <owl:sameAs rdf:resource="http://pl.dbpedia.org/resource/Mona_Lisa" />
+    <owl:sameAs rdf:resource="http://ru.dbpedia.org/resource/Мона_Лиза" />
+    <owl:sameAs rdf:resource="http://cs.dbpedia.org/resource/Mona_Lisa" />
+    <owl:sameAs rdf:resource="http://ja.dbpedia.org/resource/モナ・リザ" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+    <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Mona_Lisa" />
+    <owl:sameAs rdf:resource="http://el.dbpedia.org/resource/Μόνα_Λίζα_(Ντα_Βίντσι)" />
+    <owl:sameAs rdf:resource="http://sw.cyc.com/concept/Mx4rv573qZwpEbGdrcN5Y29ycA" />
+    <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/La_Joconde" />
+    <owl:sameAs rdf:resource="http://it.dbpedia.org/resource/Gioconda" />
+    <owl:sameAs rdf:resource="http://de.dbpedia.org/resource/Mona_Lisa" />
+    <owl:sameAs rdf:resource="http://es.dbpedia.org/resource/La_Gioconda" />
+    <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m.0jbg2" />
+    <rdfs:label xml:lang="vi">Mona Lisa</rdfs:label>
+    <rdfs:label xml:lang="ru">Мона Лиза</rdfs:label>
+    <rdfs:label xml:lang="hu">Mona Lisa</rdfs:label>
+    <rdfs:label xml:lang="ca">La Gioconda</rdfs:label>
+    <rdfs:label xml:lang="nl">Mona Lisa</rdfs:label>
+    <rdfs:label xml:lang="it">Gioconda</rdfs:label>
+    <rdfs:label xml:lang="es">La Gioconda</rdfs:label>
+    <rdfs:label xml:lang="ko">모나리자</rdfs:label>
+    <rdfs:label xml:lang="no">Mona Lisa</rdfs:label>
+    <rdfs:label xml:lang="pt">Mona Lisa</rdfs:label>
+    <rdfs:label xml:lang="de">Mona Lisa</rdfs:label>
+    <rdfs:label xml:lang="uk">Мона Ліза</rdfs:label>
+    <rdfs:label xml:lang="fr">La Joconde</rdfs:label>
+    <rdfs:label xml:lang="cs">Mona Lisa</rdfs:label>
+    <rdfs:label xml:lang="fi">Mona Lisa</rdfs:label>
+    <rdfs:label xml:lang="zh">蒙娜丽莎</rdfs:label>
+    <rdfs:label xml:lang="sv">Mona Lisa</rdfs:label>
+    <rdfs:label xml:lang="en">Mona Lisa</rdfs:label>
+    <rdfs:label xml:lang="ja">モナ・リザ</rdfs:label>
+    <rdfs:label xml:lang="pl">Mona Lisa</rdfs:label>
+    <rdfs:comment xml:lang="nl">De Mona Lisa is een olieverfschilderij dat Leonardo da Vinci schilderde tussen 1504 en 1507. De gebruikte techniek is olieverf op paneel, de afmetingen zijn 77 × 53 cm. Het is waarschijnlijk het bekendste schilderij ter wereld. Het schilderij is vooral beroemd geworden vanwege de glimlach van de Mona Lisa, die vaak als &#39;mysterieus&#39; omschreven wordt. De beschrijving van kunstenaarsbiograaf Giorgio Vasari ligt hier waarschijnlijk aan ten grondslag.</rdfs:comment>
+    <rdfs:comment xml:lang="de">Mona Lisa ist der deutsche Titel des weltberühmten Ölgemäldes von Leonardo da Vinci. Das italienische Original heißt La Gioconda (dt. die Heitere), benannt nach der Florentinerin Lisa del Giocondo. Der deutsche Titel beruht auf einem Rechtschreibfehler, denn Mona leitet sich ab von der italienischen Kurzform Monna (für Madonna ‚Frau‘), ist also kein Vorname, sondern der Titel, mit dem Lisa als Ehefrau (madonna) von Francesco del Giocondo angeredet wurde.</rdfs:comment>
+    <rdfs:comment xml:lang="pt">Mona Lisa (também conhecida como A Gioconda ou, em francês, La Joconde, ou ainda Mona Lisa del Giocondo), é a mais notável e conhecida obra de Leonardo da Vinci, um dos mais eminentes homens do Renascimento italiano. Sua pintura foi iniciada em 1503 e é nesta obra que o artista melhor concebeu a técnica do sfumato. O quadro representa uma mulher com uma expressão introspectiva e um pouco tímida. O seu sorriso restrito é muito sedutor, mesmo que um pouco conservador.</rdfs:comment>
+    <rdfs:comment xml:lang="sv">Mona Lisa är renässanskonstnären Leonardo da Vincis berömda porträtt av, enligt tradition, florentinskan (Mona) Lisa Gherardini, framför allt omtalad för sitt hemlighetsfulla leende. Målningen är ett av världens mest berömda, lovordade och reproducerade konstverk.</rdfs:comment>
+    <rdfs:comment xml:lang="fi">Mona Lisa (tunnetaan myös nimillä ital. La Gioconda ja ransk. La Joconde) on Leonardo da Vincin puulevylle 1503 alkaen maalaama öljyvärimaalaus. Maailman ehkä tunnetuin maalaus esittää salaperäisesti hymyilevää naista. Ranskan kansalliskokoelmaan kuuluva maalaus sijaitsee Pariisin Louvressa kunniapaikalla Säätyjen salissa, jossa sen näkee noin kuusi miljoonaa henkeä vuosittain. Maalausta ihailtiin ja kopioitiin laajalti sen valmistumisesta lähtien.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">La Joconde, ou Portrait de Mona Lisa, est un tableau de Léonard de Vinci, réalisé entre 1503 et 1506, qui représente un buste, probablement celui de la florentine Mona Lisa del Giocondo. Acquise par François I, cette peinture à l&#39;huile sur panneau de bois de peuplier de 77 x 53 cm est exposée au musée du Louvre à Paris. La Joconde est l&#39;un des rares tableaux attribués de façon certaine à Léonard de Vinci.</rdfs:comment>
+    <rdfs:comment xml:lang="ja">『モナ・リザ』（伊: La Gioconda、仏: La Joconde、英: Mona Lisa）は、イタリアの美術家レオナルド・ダ・ヴィンチが描いた油彩画。深緑の衣装を着た一人の女性が、僅かに微笑んだ半身の肖像が描かれている。現在はパリのルーヴル美術館に展示されている。</rdfs:comment>
+    <rdfs:comment xml:lang="ca">La Gioconda o Mona Lisa és una pintura de Leonardo da Vinci, el retrat més famós de la història i, potser, el quadre més famós de la pintura occidental. És un retrat de mig cos on apareix una dona que mira directament l&#39;espectador amb una expressió que sovint ha estat descrita com a enigmàtica. Pintat entre 1503 i 1506 o 1507, és un oli sobre taula d&#39;àlber de 77 × 53 cm retocat diverses vegades per l&#39;autor. La tècnica usada va ser l&#39;esfumat (sfumato), procediment molt característic de Leonardo.</rdfs:comment>
+    <rdfs:comment xml:lang="pl">Mona Lisa – obraz olejny namalowany na drewnie topoli o wymiarach 77 cm × 53 cm przez sławnego malarza włoskiego renesansu, Leonarda da Vinci. Obraz powstał w początkach XVI wieku (ok. 1503–1506), a obecnie znajduje się w paryskim Luwrze, będąc własnością rządu Francji. Jest to jeden z najsłynniejszych i najbardziej cenionych obrazów z czasów renesansu. O jego olbrzymiej wartości świadczy osobliwy rekord.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The Mona Lisa (La Gioconda or La Joconde, or Portrait of Lisa Gherardini, wife of Francesco del Giocondo) is a half-length portrait of a woman by the Italian artist Leonardo da Vinci, which has been acclaimed as &quot;the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world.</rdfs:comment>
+    <rdfs:comment xml:lang="uk">«Мо́на Лі́за» — портрет молодої жінки, написаний італійським художником Леонардо да Вінчі близько 1503 року. Картина є одним з найвідоміших творів живопису в світі. Відноситься до епохи Відродження. Виставлена в Луврі. Повна назва картини італ. Ritratto di Monna Lisa del Giocondo — Портрет пані Лізи дель Джокондо.</rdfs:comment>
+    <rdfs:comment xml:lang="it">La Gioconda, nota anche come Monna Lisa, è un dipinto a olio su tavola di pioppo (77x53 cm) di Leonardo da Vinci, databile al 1503-1514 circa e conservata nel Museo del Louvre di Parigi. Opera emblematica ed enigmatica, si tratta sicuramente del ritratto più celebre del mondo, nonché di una delle opere d&#39;arte più note in assoluto, oggetto di infiniti omaggi, tributi, ma anche parodie e sberleffi.</rdfs:comment>
+    <rdfs:comment xml:lang="vi">Mona Lisa (cũng được gọi là La Gioconda hay La Joconde) là một bức chân dung thế kỷ 16 được vẽ bằng sơn dầu trên một tấm gỗ dương tại Florence bởi Leonardo da Vinci trong thời kì Phục Hưng Italia. Tác phẩm thuộc sở hữu của Chính phủ Pháp và hiện được trưng bày tại bảo tàng Louvre ở Paris, Pháp với tên gọi Chân dung Lisa Gherardini, vợ của Francesco del Giocondo. Có lẽ nó là bức tranh nổi tiếng và mang tính hình tượng nhất trên thế giới.</rdfs:comment>
+    <rdfs:comment xml:lang="no">For filmen med samme navn se: Mona Lisa (film); for sangen med samme navn se: Mona Lisa (Nat King Cole-sang) «Mona Lisa»«Mona Lisa»KunstnerLeonardo da VinciÅr1503-1519TeknikkOljemaling på poppeltreDimensjoner77 × 53 cmPlasseringLouvre, Paris «Mona Lisa», er et portrett av den italienske kunstneren Leonardo da Vinci, og er et av verdens mest kjente kunstverk. Det er malt i olje på poppeltavle, fullført rundt 1503–1519 og kjøpt av kong Frans I av Frankrike.</rdfs:comment>
+    <rdfs:comment xml:lang="ko">모나리자(Mona Lisa) 또는 라 조콘다(La Gioconda, La Joconde)는 16세기 르네상스 시대에 레오나르도 다 빈치가 그린 초상화로, 현재 프랑스 파리 루브르 박물관에 전시되어 있다. &quot;모나&quot;(mona)는 유부녀 이름 앞에 붙이는 이탈리아어 경칭이고, &quot;리자&quot;(Lisa)는 초상화의 모델이 된 여인의 이름이다. 즉, 한국어로 하면 &quot;리자 여사&quot;라는 뜻이 된다. 모나리자의 다른 명칭인 &quot;라 조콘다&quot;는 한국어로 &quot;조콘도(Giocondo)의 부인&quot;이라는 뜻이 된다. 이 작품은 희미하게 미소짓고 있는 여인을 그린 초상으로, &#39;스푸마토&#39;(sfumato) 기법을 사용하여 엷은 안개가 덮인 듯한 효과를 주고 있다. 구도는 당시에 가장 기본적인 초상화 구도였던 피라미드의 형태를 띠고 있다. 또한 인물을 배경보다 높이 배치하는 방식은 오늘날 화가들이 흔히 사용하는 방법이지만 르네상스 시대에는 드문 방식을 사용하였다.</rdfs:comment>
+    <rdfs:comment xml:lang="cs">Mona Lisa, též označovaná Gioconda, je patrně nejslavnější portrét všech dob, na počátku 16. století (přesněji v letech 1503–1506, během svého florentského pobytu) ho namaloval Leonardo da Vinci. Autor si toto své dílo přibalil mezi svá zavazadla, když v roce 1516 nuceně opouštěl Řím po udání svých spolupracovníků. Leonardo před svou smrtí prodal Monu Lisu francouzskému králi Františku I. , na jehož pozvání do Francie přijel, za poměrně vysokou částku 4000 zlatých dukátů.</rdfs:comment>
+    <rdfs:comment xml:lang="hu">A Mona Lisa (más néven La Gioconda) Leonardo da Vinci 1503-1506 között készült leghíresebb festménye, remekműve, ami jelenleg a párizsi Louvre-ban van kiállítva.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">«Мо́на Ли́за», она же «Джоко́нда»;, полное название — Портре́т госпожи́ Ли́зы дель Джоко́ндо, итал.  Ritratto di Monna Lisa del Giocondo) — картина Леонардо да Винчи, находящаяся в Лувре, одно из самых известных произведений живописи в мире, которое, как считается, является портретом Лизы Герардини, супруги торговца шёлком из Флоренции Франческо дель Джокондо, написанным около 1503—1505 года.</rdfs:comment>
+    <rdfs:comment xml:lang="es">Para la ópera de Amilcare Ponchielli, véase La Gioconda (ópera) 300px La Gioconda Leonardo da Vinci, 1503-1519 Óleo sobre tabla • Renacimiento 77 cm × 53 cm Museo del Louvre, París, Bandera de Francia Francia Escucha este artículo 45px noicon Esta narración de audio fue creada a partir de una versión específica de este artículo y no refleja las posibles ediciones subsecuentes.</rdfs:comment>
+    <rdfs:comment xml:lang="zh">《蒙娜丽莎》（意大利语：La Gioconda；法语：La Joconde；英语：Mona Lisa）是文艺复兴时代画家列奥纳多·达·芬奇所繪的麗莎·喬宮多的肖像画。 这幅画可以说是世界上最著名的油画作品，很少有其他作品能像它一样，被人审查、研究、演绎或是惡搞。它的拥有者法国政府把它保存在巴黎的卢浮宫供公众欣赏。它是直接画在白杨木上的，此画面积不大，长77厘米，宽53厘米。这幅半身肖像油画描绘的是一位表情内敛的、微带笑容的女士，她的笑容有时被描写为“神秘的笑容”。它也是达芬奇的代表作。</rdfs:comment>
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://books.google.com/books?id=cwL7aF-EB84C" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://www.latrobe.edu.au/news/articles/2008/podcasts/the-mona-lisa-with-donald-sassoon/transcript" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://books.google.com/books?id=A37g3x3cXOgC" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://books.google.com/?id=EroFAAAAQAAJ" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://books.google.com/books?id=1mCBiu2yFUgC" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://books.google.com/books?id=Vdu0ynmoRc8C" />
+    <foaf:depiction rdf:resource="http://upload.wikimedia.org/wikipedia/commons/e/ec/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" />
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:16th-century_portraits" />
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:1500s_paintings" />
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Vandalized_works_of_art" />
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Portraits_by_Italian_artists" />
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Paintings_by_Leonardo_da_Vinci" />
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Renaissance_art" />
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Paintings_of_the_Louvre" />
+    <wdrs:describedby rdf:resource="http://dbpedia.org/data/Mona_Lisa.n3" />
+    <wdrs:describedby rdf:resource="http://dbpedia.org/data/Mona_Lisa.nt" />
+    <wdrs:describedby rdf:resource="http://dbpedia.org/data/Mona_Lisa.xml" />
+    <wdrs:describedby rdf:resource="http://dbpedia.org/data/Mona_Lisa.ttl" />
+    <wdrs:describedby rdf:resource="http://dbpedia.org/page/Mona_Lisa" />
+    <wdrs:describedby rdf:resource="http://dbpedia.org/data/Mona_Lisa.json" />
+    <wdrs:describedby rdf:resource="http://dbpedia.org/data/Mona_Lisa.jrdf" />
+    <wdrs:describedby rdf:resource="http://dbpedia.org/data/Mona_Lisa.jsod" />
+    <wdrs:describedby rdf:resource="http://dbpedia.org/data/Mona_Lisa.atom" />
+    <dbpedia-owl:abstract xml:lang="ja">『モナ・リザ』（伊: La Gioconda、仏: La Joconde、英: Mona Lisa）は、イタリアの美術家レオナルド・ダ・ヴィンチが描いた油彩画。深緑の衣装を着た一人の女性が、僅かに微笑んだ半身の肖像が描かれている。現在はパリのルーヴル美術館に展示されている。</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="es">Para la ópera de Amilcare Ponchielli, véase La Gioconda (ópera) 300px La Gioconda Leonardo da Vinci, 1503-1519 Óleo sobre tabla • Renacimiento 77 cm × 53 cm Museo del Louvre, París, Bandera de Francia Francia Escucha este artículo 45px noicon Esta narración de audio fue creada a partir de una versión específica de este artículo y no refleja las posibles ediciones subsecuentes. Más artículos grabados¿Problemas al reproducir este archivo?&lt;/td&gt;&lt;/tr&gt; &lt;/table&gt; Existe una versión en audio de este artículo. Haz clic aquí para saber más El cuadro La Gioconda (La Joconde en francés), también conocido como La Mona Lisa, es una obra pictórica de Leonardo Da Vinci. Adquirida por el rey Francisco I de Francia a principios del siglo XVI, desde entonces es propiedad del Estado Francés, y actualmente se exhibe en el Museo del Louvre de París. Su nombre oficial es Gioconda (alegre, traducido del italiano al castellano), en honor a la tesis más aceptada acerca de la identidad de la modelo: la esposa de Francesco Bartolomeo del Giocondo, al que debe su apodo y que realmente se llamaba Lisa Gherardini. Es un óleo sobre tabla de álamo de 77 x 53 cm, pintado entre 1503 y 1519, y retocado varias veces por el autor. Se considera el ejemplo más logrado de sfumato, técnica muy característica de Leonardo, si bien actualmente su colorido original es menos perceptible por el oscurecimiento de los barnices. El cuadro está protegido por múltiples sistemas de seguridad y ambientado a temperatura estable para su preservación óptima. Es revisado constantemente para verificar y prevenir su deterioro. Además, se han usado herramientas tecnológicas para la investigación de enigmas que rodean la obra. Por medio de estudios históricos se ha determinado que la modelo podría ser una vecina de Leonardo, que podrían conocerse sus descendientes y que la modelo podría haber estado embarazada. Pese a todas las suposiciones, las respuestas en firme a los varios interrogantes en torno a la obra de arte resultan francamente insuficientes, lo cual genera más curiosidad entre los admiradores del cuadro. La fama de esta pintura no se basa únicamente en la técnica empleada o en su belleza, sino también en los misterios que la rodean. Además, el robo que sufrió en 1911, las reproducciones realizadas, las múltiples obras de arte que se han inspirado en el cuadro y las parodias existentes contribuyen a convertir a La Gioconda en el cuadro más famoso del mundo, visitado por millones de personas anualmente.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="pt">Mona Lisa (também conhecida como A Gioconda ou, em francês, La Joconde, ou ainda Mona Lisa del Giocondo), é a mais notável e conhecida obra de Leonardo da Vinci, um dos mais eminentes homens do Renascimento italiano. Sua pintura foi iniciada em 1503 e é nesta obra que o artista melhor concebeu a técnica do sfumato. O quadro representa uma mulher com uma expressão introspectiva e um pouco tímida. O seu sorriso restrito é muito sedutor, mesmo que um pouco conservador. O seu corpo representa o padrão de beleza da mulher na época de Leonardo. Este quadro é provavelmente o retrato mais famoso na história da arte, senão, o quadro mais famoso e valioso de todo o mundo. Poucos outros trabalhos de arte são tão controversos, questionados, valiosos, elogiados, comemorados ou reproduzidos. Muitos historiadores da arte desconfiavam de que a reverência de Da Vinci pela Mona Lisa nada tinha a ver com sua maestria artística. Segundo muitos afirmavam devia-se a algo muito bem mais profundo: uma mensagem oculta nas camadas de pintura. Se observarem com calma verá que a linha do horizonte que Da Vinci pintou se encontra num nível visivelmente mais baixo que a da direita, ele fez com que a Mona Lisa parecer muito maior vista da esquerda que da direita. Historicamente, os conceitos de masculino e feminino estão ligados aos lados - o esquerdo é feminino, o direito é o masculino. A pintura a óleo sobre madeira de álamo encontra-se exposta no Museu do Louvre, em Paris, com o nome oficial de Lisa Gherardini, mulher de Francesco del Giocondo, e é a sua maior atração.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="vi">Mona Lisa (cũng được gọi là La Gioconda hay La Joconde) là một bức chân dung thế kỷ 16 được vẽ bằng sơn dầu trên một tấm gỗ dương tại Florence bởi Leonardo da Vinci trong thời kì Phục Hưng Italia. Tác phẩm thuộc sở hữu của Chính phủ Pháp và hiện được trưng bày tại bảo tàng Louvre ở Paris, Pháp với tên gọi Chân dung Lisa Gherardini, vợ của Francesco del Giocondo. Có lẽ nó là bức tranh nổi tiếng và mang tính hình tượng nhất trên thế giới. Bức tranh là một bức chân dung nửa người và thể hiện một phụ nữ có những nét thể hiện trên khuôn mặt thường được miêu tả là bí ẩn. Sự mơ hồ trong nét thể hiện của người mẫu, sự lạ thường của thành phần nửa khuôn mặt, và sự huyền ảo của các kiểu mẫu hình thức và không khí hư ảo là những tính chất mới lạ góp phần vào sức mê hoặc của bức tranh. Có lẽ nó là bức tranh nổi tiếng nhất từng bị đánh cắp và được thu hồi về bảo tàng Louvre. Ít tác phẩm nghệ thuật khác từng là chủ đề của nhiều sự chăm sóc kỹ lưỡng, nghiên cứu, thần thoại hoá và bắt chước tới như vậy. Một sự nghiên cứu và vẽ thử bằng chì than và graphite về Mona Lisa được cho là của Leonardo có trong Bộ sưu tập Hyde, tại Glens Falls, NY.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="sv">Mona Lisa är renässanskonstnären Leonardo da Vincis berömda porträtt av, enligt tradition, florentinskan (Mona) Lisa Gherardini, framför allt omtalad för sitt hemlighetsfulla leende. Målningen är ett av världens mest berömda, lovordade och reproducerade konstverk.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="zh">《蒙娜丽莎》（意大利语：La Gioconda；法语：La Joconde；英语：Mona Lisa）是文艺复兴时代画家列奥纳多·达·芬奇所繪的麗莎·喬宮多的肖像画。 这幅画可以说是世界上最著名的油画作品，很少有其他作品能像它一样，被人审查、研究、演绎或是惡搞。它的拥有者法国政府把它保存在巴黎的卢浮宫供公众欣赏。它是直接画在白杨木上的，此画面积不大，长77厘米，宽53厘米。这幅半身肖像油画描绘的是一位表情内敛的、微带笑容的女士，她的笑容有时被描写为“神秘的笑容”。它也是达芬奇的代表作。</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="en">The Mona Lisa (La Gioconda or La Joconde, or Portrait of Lisa Gherardini, wife of Francesco del Giocondo) is a half-length portrait of a woman by the Italian artist Leonardo da Vinci, which has been acclaimed as &quot;the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world. &quot; The painting, thought to be a portrait of Lisa Gherardini, the wife of Francesco del Giocondo, is in oil on a poplar panel, and is believed to have been painted between 1503 and 1506. It was acquired by King Francis I of France and is now the property of the French Republic, on permanent display at the Musée du Louvre in Paris. The ambiguity of the subject&#39;s expression, frequently described as enigmatic, the monumentality of the composition, the subtle modeling of forms and the atmospheric illusionism were novel qualities that have contributed to the continuing fascination and study of the work.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="cs">Mona Lisa, též označovaná Gioconda, je patrně nejslavnější portrét všech dob, na počátku 16. století (přesněji v letech 1503–1506, během svého florentského pobytu) ho namaloval Leonardo da Vinci. Autor si toto své dílo přibalil mezi svá zavazadla, když v roce 1516 nuceně opouštěl Řím po udání svých spolupracovníků. Leonardo před svou smrtí prodal Monu Lisu francouzskému králi Františku I. , na jehož pozvání do Francie přijel, za poměrně vysokou částku 4000 zlatých dukátů. Dnes obraz vlastní francouzská vláda a je vystaven v Louvru v Paříži. Během historie však obraz nejdříve byl na zámku Fontainebleau a později ve Versailles. Po Velké francouzské revoluci byl umístěn v Louvru krom doby, kdy byl pověšen v ložnici samotného Napoleona. Jde o malbu olejem na dřevo topolu s využitím techniky sfumato. Žena na obraze sleduje diváka s nenapodobitelným, tajuplným úsměvem, který se stal předmětem mnoha pověstí a spekulací. Kdo stál Leonardovi pro tento obraz modelem je do dnešní doby objektem dohadů. Tradičně se uvádí Lisa del Giocondo, žena florentského obchodníka Francesca del Giocondo. Zmiňuje ji první Leonardův životopisec Giorgio Vasari. Tento názor dokládá také odborník z knihovny německé univerzity v Heidelbergu Armin Schlechter na základě nálezu rukopisné poznámky na okraji knihy florentského úředníka Agostina Vespucciho z října 1503. Ital, který patřil mezi známé da Vinciho, v zápiscích přirovnává renesančního velikána ke starověkému řeckému malíři Apelléovi a uvádí, že právě pracuje souběžně na třech malbách, z nichž jedna je portrét Lisy del Giocondo.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="no">For filmen med samme navn se: Mona Lisa (film); for sangen med samme navn se: Mona Lisa (Nat King Cole-sang) «Mona Lisa»«Mona Lisa»KunstnerLeonardo da VinciÅr1503-1519TeknikkOljemaling på poppeltreDimensjoner77 × 53 cmPlasseringLouvre, Paris «Mona Lisa», er et portrett av den italienske kunstneren Leonardo da Vinci, og er et av verdens mest kjente kunstverk. Det er malt i olje på poppeltavle, fullført rundt 1503–1519 og kjøpt av kong Frans I av Frankrike. Det er i dag eid av den franske stat og er fast utstilt ved Musée du Louvre i Paris. Maleriet er et halvlengde portrett og viser en sittende kvinne, Lisa del Giocondo, hvis ansiktsuttrykk har blitt hyppig beskrevet som gåtefullt. Det tvetydige i subjektets uttrykk, den monumentale i komposisjonen, og den finurlige modelleringen av formene og atmosfærens illusjonisme var nyskapende kvaliteter som har bidratt til maleriets fortsatte fascinasjon og i studiet av verket. Særlig gjelder dette det gåtefulle og uutgrunnelige smil, om enn ikke unikt for nettopp dette bildet, men som går igjen i flere av Leonardos malerier ved at øyenkrokene og munnviken er bevisst malt uklare i en teknikk som kalles sfumato. Bildet er betraktet og anerkjent, karikert og ettersøkt av besøkende ved Louvre som et av de mest berømte malerier i verden. Maleriet er ett av kun fire kvinneportretter malt av Leonardo, de andre er Damen med hermelinen, Ginevra de&#39; Benci og La Belle Ferronière.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="fr">La Joconde, ou Portrait de Mona Lisa, est un tableau de Léonard de Vinci, réalisé entre 1503 et 1506, qui représente un buste, probablement celui de la florentine Mona Lisa del Giocondo. Acquise par François I, cette peinture à l&#39;huile sur panneau de bois de peuplier de 77 x 53 cm est exposée au musée du Louvre à Paris. La Joconde est l&#39;un des rares tableaux attribués de façon certaine à Léonard de Vinci. La Joconde est devenue un tableau éminemment célèbre car, depuis sa réalisation, nombre d&#39;artistes l&#39;ont prise comme référence. Ce chef-d&#39;œuvre constitue en effet l&#39;aboutissement des recherches du XV siècle sur la représentation du portrait. À l&#39;époque romantique, les artistes ont été fascinés par l&#39;énigme de La Joconde et ont contribué à développer le mythe qui l&#39;entoure, en faisant de ce tableau l’une des œuvres d&#39;art les plus célèbres du monde, si ce n&#39;est la plus célèbre. Au XXI siècle, elle est devenue l&#39;objet d&#39;art le plus visité au monde, juste devant le diamant Hope, avec visiteurs qui viennent l&#39;admirer quotidiennement.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="de">Mona Lisa ist der deutsche Titel des weltberühmten Ölgemäldes von Leonardo da Vinci. Das italienische Original heißt La Gioconda (dt. die Heitere), benannt nach der Florentinerin Lisa del Giocondo. Der deutsche Titel beruht auf einem Rechtschreibfehler, denn Mona leitet sich ab von der italienischen Kurzform Monna (für Madonna ‚Frau‘), ist also kein Vorname, sondern der Titel, mit dem Lisa als Ehefrau (madonna) von Francesco del Giocondo angeredet wurde. Das Gemälde – französisch als La Joconde bezeichnet – hängt heute im Louvre in Paris. Es ist auf dünnem Pappelholz gemalt, nur 77 cm × 53 cm groß und entstand wahrscheinlich in den Jahren 1503 bis 1506. Andere Forschungen kommen zu einem Entstehungszeitraum zwischen 1502 und 1503.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="pl">Mona Lisa – obraz olejny namalowany na drewnie topoli o wymiarach 77 cm × 53 cm przez sławnego malarza włoskiego renesansu, Leonarda da Vinci. Obraz powstał w początkach XVI wieku (ok. 1503–1506), a obecnie znajduje się w paryskim Luwrze, będąc własnością rządu Francji. Jest to jeden z najsłynniejszych i najbardziej cenionych obrazów z czasów renesansu. O jego olbrzymiej wartości świadczy osobliwy rekord. Podczas przenosin na tymczasową wystawę w Waszyngtonie w 1962 roku, obraz został ubezpieczony na kwotę 100 milionów dolarów. &quot;Mona Lisa&quot; jest obrazem charakteryzującym się raczej ciemnymi i chłodnymi barwami. Dominuje w nim zieleń i to zarówno w szacie samej Mony, jak i w znajdującym się za nią lesie. Kompozycja jest zdecydowanie statyczna, lecz otwarta.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="ca">La Gioconda o Mona Lisa és una pintura de Leonardo da Vinci, el retrat més famós de la història i, potser, el quadre més famós de la pintura occidental. És un retrat de mig cos on apareix una dona que mira directament l&#39;espectador amb una expressió que sovint ha estat descrita com a enigmàtica. Pintat entre 1503 i 1506 o 1507, és un oli sobre taula d&#39;àlber de 77 × 53 cm retocat diverses vegades per l&#39;autor. La tècnica usada va ser l&#39;esfumat (sfumato), procediment molt característic de Leonardo. El quadre és propietat del govern francès i està exposat al Museu del Louvre de París amb el títol Portrait de Lisa Gherardini, épouse de Francesco del Giocondo (Retrat de Lisa Gherardini, esposa de Francesco del Giocondo). Protegit per múltiples sistemes de seguretat i ambientat perquè es preservi de manera òptima, està sotmès a un procés de revisió constant per verificar-ne i prevenir-ne el deteriorament. La fama d&#39;aquesta pintura no s&#39;explica únicament per la tècnica emprada o per la seva bellesa, sinó pels misteris que l&#39;envolten, com ara l&#39;enigmàtica expressió del rostre, que ha generat molts comentaris i controvèrsies que s&#39;han intentat respondre amb diverses investigacions. Per exemple, alguns estudis històrics han permès determinar que la model del quadre podria ser una veïna de Leonardo, que es podrien conèixer els seus descendents i que la model podria haver estat embarassada. Malgrat totes les suposicions, les respostes en ferm als diversos interrogants són clarament insuficients, i això genera una curiositat més gran entre els admiradors del quadre. A més, a la llegenda que envolta La Gioconda cal afegir-hi el robatori del 1911, les múltiples reproduccions que se n&#39;han fet, els enigmes sobre la identitat de la model o el secret del seu somriure, les múltiples obres d&#39;art que s&#39;hi han inspirat i la quantitat de paròdies que ha inspirat; tot plegat ha contribuït a convertir La Gioconda en el quadre més famós del món, que cada any visiten milions de persones.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="uk">«Мо́на Лі́за» — портрет молодої жінки, написаний італійським художником Леонардо да Вінчі близько 1503 року. Картина є одним з найвідоміших творів живопису в світі. Відноситься до епохи Відродження. Виставлена в Луврі. Повна назва картини італ. Ritratto di Monna Lisa del Giocondo — Портрет пані Лізи дель Джокондо.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="it">La Gioconda, nota anche come Monna Lisa, è un dipinto a olio su tavola di pioppo (77x53 cm) di Leonardo da Vinci, databile al 1503-1514 circa e conservata nel Museo del Louvre di Parigi. Opera emblematica ed enigmatica, si tratta sicuramente del ritratto più celebre del mondo, nonché di una delle opere d&#39;arte più note in assoluto, oggetto di infiniti omaggi, tributi, ma anche parodie e sberleffi. Il sorriso impercettibile della Gioconda, col suo alone di mistero, ha ispirato tantissime pagine di critica, di letteratura, di opere di immaginazione, di studi anche psicoanalitici. Sfuggente, ironica e sensuale, la Monna Lisa è stata di volta in volta amata, idolatrata, ma anche derisa o aggredita. Vera e propria icona della pittura, è vista ogni giorno da migliaia di persone, tanto che nella grande sala in cui è esposta un cordone deve tenere a notevole distanza i visitatori: nella lunga storia del dipinto non sono mancati i tentativi di vandalismo, nonché un furto rocambolesco che in un certo senso ne ha alimentato la leggenda.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="hu">A Mona Lisa (más néven La Gioconda) Leonardo da Vinci 1503-1506 között készült leghíresebb festménye, remekműve, ami jelenleg a párizsi Louvre-ban van kiállítva.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="ru">«Мо́на Ли́за», она же «Джоко́нда»;, полное название — Портре́т госпожи́ Ли́зы дель Джоко́ндо, итал. &amp;#160;Ritratto di Monna Lisa del Giocondo) — картина Леонардо да Винчи, находящаяся в Лувре, одно из самых известных произведений живописи в мире, которое, как считается, является портретом Лизы Герардини, супруги торговца шёлком из Флоренции Франческо дель Джокондо, написанным около 1503—1505 года.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="nl">De Mona Lisa is een olieverfschilderij dat Leonardo da Vinci schilderde tussen 1504 en 1507. De gebruikte techniek is olieverf op paneel, de afmetingen zijn 77 × 53 cm. Het is waarschijnlijk het bekendste schilderij ter wereld. Het schilderij is vooral beroemd geworden vanwege de glimlach van de Mona Lisa, die vaak als &#39;mysterieus&#39; omschreven wordt. De beschrijving van kunstenaarsbiograaf Giorgio Vasari ligt hier waarschijnlijk aan ten grondslag. Hij omschreef de glimlach als &quot;eerder goddelijk dan menselijk&quot;. Anderen zijn van mening dat de geportretteerde heel neutraal kijkt. Bij vergelijking van dit schilderij met andere schilderijen uit het begin van de 16e eeuw blijkt hoe ver Da Vinci zijn tijd vooruit was, vooral door het gebruik van zijn sfumato-schildertechniek. Ook opvallend is dat de linkerhorizon lager ligt dan de rechter. Dit optische middel is waarschijnlijk gebruikt om de contraposto-houding van het model te benadrukken. Mogelijk is de achtergrond de vallei van het Italiaanse stadje Bobbio. Als dat zo is dan is rechts de plaatselijke Duivelsbrug te zien.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="ko">모나리자(Mona Lisa) 또는 라 조콘다(La Gioconda, La Joconde)는 16세기 르네상스 시대에 레오나르도 다 빈치가 그린 초상화로, 현재 프랑스 파리 루브르 박물관에 전시되어 있다. &quot;모나&quot;(mona)는 유부녀 이름 앞에 붙이는 이탈리아어 경칭이고, &quot;리자&quot;(Lisa)는 초상화의 모델이 된 여인의 이름이다. 즉, 한국어로 하면 &quot;리자 여사&quot;라는 뜻이 된다. 모나리자의 다른 명칭인 &quot;라 조콘다&quot;는 한국어로 &quot;조콘도(Giocondo)의 부인&quot;이라는 뜻이 된다. 이 작품은 희미하게 미소짓고 있는 여인을 그린 초상으로, &#39;스푸마토&#39;(sfumato) 기법을 사용하여 엷은 안개가 덮인 듯한 효과를 주고 있다. 구도는 당시에 가장 기본적인 초상화 구도였던 피라미드의 형태를 띠고 있다. 또한 인물을 배경보다 높이 배치하는 방식은 오늘날 화가들이 흔히 사용하는 방법이지만 르네상스 시대에는 드문 방식을 사용하였다. 이 그림에는 황금비율인 1:1.618의 비율이 상당히 많이 들어가있다. 코와 눈썹의 길이와, 턱과 코의 길이의 비율, 인중과 입술의 길이와 입술과 턱의 길이의 비율, 얼굴의 가로와 세로의 비율 등 황금비율이 많이 들어가 균형잡힌 느낌을 준다. 레오나르도 다빈치는 1502년에 모나리자를 그리기 시작했는데, 조르지오 바사리의 말에 의하면 미완성작으로 남겨둔지 4년이 지난 후에서 다시 그리기 시작했다고 한다.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="fi">Mona Lisa (tunnetaan myös nimillä ital. La Gioconda ja ransk. La Joconde) on Leonardo da Vincin puulevylle 1503 alkaen maalaama öljyvärimaalaus. Maailman ehkä tunnetuin maalaus esittää salaperäisesti hymyilevää naista. Ranskan kansalliskokoelmaan kuuluva maalaus sijaitsee Pariisin Louvressa kunniapaikalla Säätyjen salissa, jossa sen näkee noin kuusi miljoonaa henkeä vuosittain. Maalausta ihailtiin ja kopioitiin laajalti sen valmistumisesta lähtien. Sillä on ollut vaikutusta niin muotokuvien kehitykseen kuin muuhunkin taiteeseen. Se ei kuitenkaan ollut poikkeuksellisen tunnettu ennen 1800-luvun puoliväliä, jolloin symbolistitaiteilijat kiinnittivät siihen huomiota. He näkivät maalauksen ikuisen mystisen naisellisuuden ruumiillistumana. Myöhemmin Marcel Duchamp kommentoi maalausta humoristisesti teoksessa LHOOQ (1917), jossa kuvaan on lisätty viikset, parta ja Duchampin signeeraus. Hänen jälkeensä kuvaa on käytetty vapaammin niin taiteessa kuin mainonnassakin. Maalauksesta tuli 1900-luvun loppuun mennessä maailmanlaajuinen ikoni, joka on esiintynyt sadoissa taideteoksissa ja vähintään kahdessa tuhannessa mainoksessa - 2000-luvun alussa se nähtiin uudessa mainoksessa joka viikko. Maalauksen mainetta ovat lisänneet myös varkaus ja vahingoitusyritykset, koska uutisointi on tuonut maalaukset kaikkien tietoisuuteen.</dbpedia-owl:abstract>
+    <dbpprop:expiry rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2012</dbpprop:expiry>
+    <dbpprop:alt xml:lang="en">See adjacent text.</dbpprop:alt>
+    <dbpprop:wikiPageUsesTemplate rdf:resource="http://dbpedia.org/resource/Template:Infobox_artwork" />
+    <dbpprop:wikiPageUsesTemplate rdf:resource="http://dbpedia.org/resource/Template:Pp-protected" />
+    <dbpprop:type xml:lang="en">Oil on poplar</dbpprop:type>
+    <dbpprop:year xml:lang="en">c. 1503–1519</dbpprop:year>
+    <dbpprop:city xml:lang="en">Paris</dbpprop:city>
+    <dbpedia-owl:thumbnail rdf:resource="http://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg/200px-Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" />
+    <dbpprop:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int">77</dbpprop:height>
+    <dbpprop:artist rdf:resource="http://dbpedia.org/resource/Leonardo_da_Vinci" />
+    <dbpprop:museum rdf:resource="http://dbpedia.org/resource/Mus%C3%A9e_du_Louvre" />
+    <dbpprop:otherLanguage xml:lang="en">Italian</dbpprop:otherLanguage>
+    <dbpprop:otherLanguage xml:lang="en">French</dbpprop:otherLanguage>
+    <dbpprop:title xml:lang="en">Mona Lisa</dbpprop:title>
+    <dbpprop:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int">53</dbpprop:width>
+    <dbpprop:imageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">250</dbpprop:imageSize>
+    <dbpprop:small xml:lang="en">yes</dbpprop:small>
+    <dbpprop:imageFile xml:lang="en">Mona Lisa, by Leonardo da Vinci, from C2RMF retouched.jpg</dbpprop:imageFile>
+    <dbpprop:otherTitle xml:lang="en">La Gioconda</dbpprop:otherTitle>
+    <dbpprop:otherTitle xml:lang="en">La Joconde</dbpprop:otherTitle>
+    <dbpprop:heightInch rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</dbpprop:heightInch>
+    <dbpprop:widthInch rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</dbpprop:widthInch>
+    <ns8:wasDerivedFrom rdf:resource="http://en.wikipedia.org/wiki/Mona_Lisa?oldid=493779795" />
+    <dbpprop:hasPhotoCollection rdf:resource="http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Mona_Lisa" />
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Lisa_del_Giocondo">
+    <dbpedia-owl:knownFor rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Mona_Lisa_(disambiguation)">
+    <dbpedia-owl:wikiPageDisambiguates rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Vincenzo_Peruggia">
+    <dbpedia-owl:knownFor rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Tadahiko_Ogawa">
+    <dbpedia-owl:knownFor rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Mona_Lisa_(singer)">
+    <dbpprop:name rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Mona_Lisa_(crater)">
+    <dbpprop:eponym rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Mona">
+    <dbpedia-owl:wikiPageDisambiguates rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/All_That_(season_3)">
+    <dbpprop:title rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/List_of_All_That_episodes">
+    <dbpprop:title rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Cultural_depictions_of_Leonardo_da_Vinci">
+    <dbpprop:works rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Leonardo_da_Vinci&#39;s_personal_life">
+    <dbpprop:works rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Monna_Lisa">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/La_joconde">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Mona_lisa">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/La_Joconde">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/The_Mona_Lisa">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Monalisa">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/La_Gionconda">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/La_Mona_Lisa">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Lisa_Giacondo">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Lonely_madonna">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Mona_lisa_theft">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://en.wikipedia.org/wiki/Mona_Lisa">
+    <foaf:primaryTopic rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://mpii.de/yago/resource/Mona_Lisa">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Mona_Lisa" />
+  </rdf:Description>
+</rdf:RDF>

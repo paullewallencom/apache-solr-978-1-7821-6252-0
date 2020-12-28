@@ -1,0 +1,14 @@
+This is an example application of my blog post:
+
+Running Solr with Maven - http://www.petrikainulainen.net/programming/maven/running-solr-with-maven/
+
+CONFIGURATION:
+
+- Open profiles/dev/config.properties
+- Set the value of solr.home.directory property
+- Update the Solr schema if necessary (this one haa a custom schema)
+
+RUN:
+
+- Run either mvn jetty:run or mvn:jetty:run-war
+- Open browser and go to url: http://localhost:8983/solr/

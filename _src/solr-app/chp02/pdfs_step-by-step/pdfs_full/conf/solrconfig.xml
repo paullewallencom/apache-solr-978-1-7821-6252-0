@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  Copyright 2013 Alfredo Serafini (http://seralf.it)
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<config>
+
+	<luceneMatchVersion>LUCENE_45</luceneMatchVersion>
+	<directoryFactory name="DirectoryFactory" class="solr.MMapDirectoryFactory" />
+
+	<codecFactory name="CodecFactory" class="solr.SchemaCodecFactory" />
+
+	<!-- These dir are relative to this xml! -->
+	<lib dir="${solr.core.instanceDir}/../../../solr/contrib/extraction/lib" />
+	<lib dir="${solr.core.instanceDir}/../../../solr/dist/" regex="solr-cell-\d.*\.jar" />
+
+	<requestHandler name="standard" class="solr.StandardRequestHandler" default="true" />
+
+	<requestHandler name="/update" class="solr.UpdateRequestHandler">
+		<lst name="defaults">
+			<str name="update.chain">deduplication</str>
+		</lst>
+	</requestHandler>
+
+	<requestHandler name="/update/extract" class="solr.extraction.ExtractingRequestHandler">
+		<lst name="defaults">
+			<str name="captureAttr">true</str>
+			<str name="lowernames">true</str>
+			<str name="overwrite">true</str>
+			<str name="literalsOverride">true</str>
+			<str name="fmap.a">link</str>
+			<!-- the configuration here could be useful for tests -->
+			<str name="update.chain">deduplication</str>
+		</lst>
+	</requestHandler>
+
+	<updateRequestProcessorChain name="deduplication">
+		<processor class="org.apache.solr.update.processor.SignatureUpdateProcessorFactory">
+			<bool name="overwriteDupes">false</bool>
+			<str name="signatureField">uid</str>
+			<bool name="enabled">true</bool>
+			<str name="fields">content</str>
+			<str name="minTokenLen">10</str>
+			<str name="quantRate">.2</str>
+			<str name="signatureClass">solr.update.processor.TextProfileSignature</str>
+		</processor>
+		<processor class="solr.LogUpdateProcessorFactory" />
+		<processor class="solr.RunUpdateProcessorFactory" />
+	</updateRequestProcessorChain>
+
+	<requestHandler name="/admin/" class="org.apache.solr.handler.admin.AdminHandlers" />
+	<admin>
+		<defaultQuery>*:*</defaultQuery>
+	</admin>
+
+</config>
+

@@ -1,0 +1,22 @@
+<add>
+	<doc>
+		<field name="id">01</field>
+		<field name="author">Erich Gamma</field>
+		<field name="author">Richard Helm</field>
+		<field name="author">Ralph Johnson</field>
+		<field name="author">John Vlissides</field>
+		<field name="title">Design Patterns: Elements of Reusable Object-Oriented Software</field>
+		<field name="text">Design Patterns: Elements of Reusable Object-Oriented Software is a software engineering book describing recurring solutions to common problems in software design. (Source: http://en.wikipedia.org/wiki/Design_Patterns)</field>
+		<field name="fullText" type="string">The most famous book about Design Patterns.</field>
+		<field name="keyword_string">Design Patterns</field>
+		<field name="keyword_string">Software</field>
+		<field name="language_string">C++</field>
+		<field name="language_string">Smalltak</field>
+		<field name="url_string">http://en.wikipedia.org/wiki/Design_Patterns</field>
+	</doc>
+	<doc>
+		<field name="id">02</field>
+		<field name="author">Example Author</field>
+		<field name="text">Hello World!</field>
+	</doc>
+</add>

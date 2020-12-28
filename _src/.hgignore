@@ -1,0 +1,26 @@
+syntax: glob
+*.orig
+*.rej
+*~
+*.*~
+*.o
+tests/*.err
+.metadata/
+bin/
+gen/
+data/
+solr/
+EXTRAs/
+
+syntax: regexp
+.*\#.*\#$
+
+
+syntax: regexp
+target$
+syntax: regexp
+\.settings$
+syntax: regexp
+\.project$
+syntax: regexp
+\.classpath$

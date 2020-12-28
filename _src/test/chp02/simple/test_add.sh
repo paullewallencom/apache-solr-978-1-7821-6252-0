@@ -1,0 +1,1 @@
+curl -X POST 'http://localhost:8983/solr/simple/update?commit=true&wt=json" -H "Content-Type: text/xml' -d @docs.xml

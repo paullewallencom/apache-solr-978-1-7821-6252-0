@@ -1,0 +1,82 @@
+#-------------------------------------------------------------------------------
+# Copyright 2013 Alfredo Serafini (http://seralf.it)
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#   http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#-------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title th:text="${'Solr Core: '+core.getCoreDescriptor().getName()}">CORE NAME</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<!-- TODO: EXTERNALIZE STYLESHEET with <link rel="stylesheet" type="text/css" href="./css/style.css" th:href="@{css/gtvg.css}" /> -->
+<style type="text/css">
+*{
+	margin: 0px; padding: 0px;
+}
+header,footer{
+	background: #FFA;
+	padding: 10px 20px;
+}
+article {
+	margin: 4px 10px;
+}
+article header {
+	background: #AFA;
+	padding: 4px 20px;
+}
+.document .content {
+	overflow: scroll;
+	max-height: 200px;
+	text-align: justified;
+}
+</style>
+</head>
+<body>
+
+	<header>
+		<h1 id="core_name" th:text="${core.getCoreDescriptor().getName()}">CORE NAME</h1>
+		<p>startTime: <span th:text="${core.getStatistics().get('startTime')}">400</span></p>
+		<div th:with="c=${request.getContext()}">
+			<p><span th:text="${c.get('webapp')} + ${c.get('path')} + '?' + ${request.getParamString()}">query?</span></p>
+		</div>
+				
+	</header>
+
+	<section id="documents" th:each="doc : ${docs}">
+		
+		<article class="document">
+			<header><h2 th:text="*{doc.get('title')}">A TITLE for the DOC</h2></header>
+			<div class="content" th:text="*{doc.get('abstract')}">LOREM IPSUM..</div>
+		</article>
+		
+	</section>	
+	
+	<footer>
+		<p id="today">Today is: <span th:text="${today}">13 February 2011</span></p>
+	</footer>
+
+
+<script type="text/javascript" th:inline="text">
+/*<![CDATA[*/
+// you can post-process view data here :-)
+$(function(){
+	var c = $(core_name)
+	c.html(c.html().replace('_', ' '))
+});
+/*]]>*/
+</script>
+
+</body>
+</html>

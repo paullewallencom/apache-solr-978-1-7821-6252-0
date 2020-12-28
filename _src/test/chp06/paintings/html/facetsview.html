@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQCloud Example</title>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<link rel="stylesheet" type="text/css" href="js/jqcloud/jqcloud.css" />
+<script type="text/javascript" src="js/jqcloud/jqcloud-1.0.0.min.js"></script>
+<script type="text/javascript">
+
+$(function() {
+
+	// TODO: add complete function
+	function normalize(term){
+		return term
+			.replace('%c3%ad', 'í')
+			.replace('%c3%a9', 'é')
+			.replace('%c3%89', 'É')
+	}
+
+	function boh(field_name, min, limit, invert){
+		var url = "http://localhost:8983/solr/paintings/select?q=*:*&rows=0&facet=on&facet.field="+field_name+"&facet.limit="+limit+"&facet.mincount="+min+"&wt=json&json.nl=map&json.wrf=?";
+		$.getJSON(url, function(data) {
+			var facets = data.facet_counts.facet_fields[field_name];
+			var words = [];
+			for(f in facets){
+			console.log(f)
+				search_link = "http://localhost:8983/solr/paintings/select?q="+field_name+":"+f+"&wt=json";
+				w = {text: normalize(f), weight: Math.log(facets[f]*0.01), html: {title: "search for \""+f+"\" ("+facets[f]+" documents)"}, link: search_link},
+				words.push(w);
+			}
+			$("#"+field_name).jQCloud(words);
+		});
+	}
+
+	boh("artist_entity", 3, 100);
+	boh("museum_entity", 3, -1);
+	boh("city_entity", 1, -1);
+	boh("subject_entity", 2, 50);
+	boh("title", 2, 100);
+	
+	boh("fullText", 3, 200);
+
+});
+</script>
+
+<style type="text/css">
+body {
+	background: #FFF;
+	font: normal 14px Verdana;
+}
+
+#fullText{
+	font-size: 8px;
+}
+#artist_entity {
+	font-size: 12px;
+	line-height: 150%;
+}
+#museum_entity{
+	font-size: 14px;
+}
+#city_entity{
+	font-size: 10px;
+}
+#title{
+	font-size: 14px;
+}
+#subject_entity{
+	font-size: 12px;
+}
+
+#fullText{
+	font: normal 10px Comic;
+	line-height: 80%;
+}
+.wordcloud h1 {
+	padding: 4px 20px;
+	background: #000;
+	color: #FFF;
+	font: bold 20px Arial !important;
+	z-index: 4 !important;
+	margin: 20px 0px 0px 0px;
+}
+
+.wordcloud {
+	width: 400px;
+	height: 400px;
+	border: 2px solid #000;
+	float: left;
+	background: #FFF;
+	margin: 10px;
+}
+
+</style>
+
+
+</head>
+<body>
+	<section id="artist_entity" class="wordcloud"><h1>artists</h1></section>
+	<section id="title" class="wordcloud"><h1>titles</h1></section>
+	<section id="city_entity" class="wordcloud"><h1>cities</h1></section>
+	<section id="museum_entity" class="wordcloud"><h1>museums</h1></section>
+	<section id="subject_entity" class="wordcloud"><h1>subjects</h1></section>
+	<section id="fullText" class="wordcloud"><h1>terms</h1></section>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  Copyright 2013 Alfredo Serafini (http://seralf.it)
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<config>
+
+	<luceneMatchVersion>LUCENE_45</luceneMatchVersion>
+	<directoryFactory name="DirectoryFactory" class="solr.MMapDirectoryFactory" />
+
+	<codecFactory name="CodecFactory" class="solr.SchemaCodecFactory" />
+	<requestHandler name="standard" class="solr.StandardRequestHandler"	default="true" />
+
+	<requestHandler name="/admin/" class="solr.admin.AdminHandlers" />
+	<admin>
+		<defaultQuery>*:*</defaultQuery>
+	</admin>
+
+	<requestHandler name="/update" class="solr.UpdateRequestHandler">
+		<lst name="defaults">
+			<str name="update.chain">timestamp</str>
+		</lst>
+	</requestHandler>
+
+	<updateRequestProcessorChain name="timestamp"
+		default="true">
+		<processor class="solr.TimestampUpdateProcessorFactory">
+			<str name="fieldName">timestamp</str>
+		</processor>
+		<processor class="solr.LogUpdateProcessorFactory" />
+		<processor class="solr.RunUpdateProcessorFactory" />
+	</updateRequestProcessorChain>
+
+	<updateHandler class="solr.DirectUpdateHandler2">
+		<updateLog>
+			<str name="dir">${solr.ulog.dir:}</str>
+		</updateLog>
+		<autoCommit>
+			<maxTime>60000</maxTime>
+			<maxDocs>100</maxDocs>
+		</autoCommit>
+	</updateHandler>
+
+	<requestHandler name="/search_by_width/" class="solr.StandardRequestHandler">
+		<lst name="defaults">
+			<int name="rows">3</int>
+			<str name="wt">json</str>
+			<str name="indent">true</str>
+			<bool name="omitHeader">true</bool>
+		</lst>
+		<lst name="appends">
+			<str name="fq">abstract:painting AND sea</str>
+			<str name="fq">title:* AND artist:*</str>
+		</lst>
+		<lst name="invariants">
+			<str name="fl">title,artist</str>
+			<str name="width">width:{0 TO 4]</str>
+		</lst>
+	</requestHandler>
+
+</config>

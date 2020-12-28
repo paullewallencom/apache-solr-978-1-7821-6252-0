@@ -1,0 +1,13 @@
+ 
+1) open the shell and change directory to the /example directory under the default Solr installation directory.
+For example on my system:
+
+>> cd /home/seralf/SolrStarterBook/solr/example/
+
+2) start Solr referring to the directory containing the configuration to use.
+For this example:
+
+>> java -Dsolr.solr.home=/home/seralf/SolrStarterBook/solr-app/chp02 -jar start.jar
+
+NOTE:
+if you want use the start.sh and start.bat scripts for your convenience, please open them in a text editor and read the online comments

@@ -1,0 +1,78 @@
+<add xmlns:dc="http://purl.org/dc/elements/1.1/" overwrite="true">
+
+	<doc>
+		<field name="uri">http://dbpedia.org/resource/Metamorphosis_of_Narcissus</field>
+		<field name="timestamp">NOW</field>
+		<field name="sameAs" update="add">http://rdf.freebase.com/ns/m.09xqfj</field>
+		<field name="sameAs" update="add">http://dbpedia.org/resource/Metamorphosis_of_Narcissus</field>
+		<field name="sameAs" update="add">http://fr.dbpedia.org/resource/Métamorphose_de_Narcisse</field>
+		<field name="sameAs" update="add">http://ru.dbpedia.org/resource/Метаморфозы_Нарцисса</field>
+		<field name="label" update="add">Metamorphosis of Narcissus</field>
+		<field name="comment" update="add">Metamorphosis of Narcissus (1937) is an oil-on-canvas painting by the Spanish surrealist Salvador Dalí. This painting is from Dalí's Paranoiac-critical period. According to Greek mythology, Narcissus fell in love with his own reflection in a pool. Unable to embrace the watery image, he pined away, and the gods immortalized him as a flower. Dali completed this painting in 1937 on his long awaited return to Paris after having had great success in the United States.</field>
+		<field name="depiction" update="add">http://upload.wikimedia.org/wikipedia/commons/2/21/Metamorphosis_of_Narcissus.jpg</field>
+		<field name="subject" update="add">http://dbpedia.org/resource/Category:Paintings_by_Salvador_Dalí</field>
+		<field name="subject" update="add">http://dbpedia.org/resource/Category:Paintings_by_Salvador_Dal%C3%AD</field>
+		<field name="subject" update="add">http://dbpedia.org/resource/Category:Surrealist_paintings</field>
+		<field name="subject" update="add">http://dbpedia.org/resource/Category:1937_paintings</field>
+		<field name="subject" update="add">http://dbpedia.org/resource/Category:Paintings_depicting_Greek_myths</field>
+		<field name="subject" update="add">http://dbpedia.org/resource/Category:Collection_of_the_Tate</field>
+		<field name="abstract" update="add">Metamorphosis of Narcissus (1937) is an oil-on-canvas painting by the Spanish surrealist Salvador Dalí. This painting is from Dalí's Paranoiac-critical period. According to Greek mythology, Narcissus fell in love with his own reflection in a pool. Unable to embrace the watery image, he pined away, and the gods immortalized him as a flower. Dali completed this painting in 1937 on his long awaited return to Paris after having had great success in the United States. The painting shows Narcissus sitting in a pool, gazing down. Not far away there is a decaying stone figure which corresponds closely to him but is perceived quite differently; as a hand holding up a bulb or egg from which a Narcissus is growing. The egg has been used as a symbol for sexuality
+			in other
+			paintings
+			by Dali. In the background, a group of naked figures can be seen, while a third Narcissus like figure appears on the horizon. A poem was written by Dalí to accompany the painting. v&amp;thinsp;&amp;middot;&amp;thinsp;d&amp;thinsp;&amp;middot;&amp;thinsp;eSalvador DalíList of worksSelectedpaintings Landscape Near Figueras (1910) &amp;bull; Vilabertran (1913) &amp;bull; Fiesta in Figueres (1914–16) &amp;bull; Port of Cadaqués (Night) (1918–19) &amp;bull; The Artist's Father at Llane Beach (1920) &amp;bull; The Garden of Llaner (Cadaqués) (1920–21) &amp;bull; Cabaret Scene (1922) &amp;bull; Cubist Self-Portrait with "La Publicitat" (1923) &amp;bull; Self-portrait with L'Humanitie (1923) &amp;bull; Portrait of Luis Buñuel (1924) &amp;bull; Siphon and Small Bottle of Rum
+			(1924)
+			&amp;bull; The
+			Basket of Bread (1926) &amp;bull; Honey Is Sweeter Than Blood (1927) &amp;bull; The Lugubrious Game (1929) &amp;bull; The First Days of Spring (1929) &amp;bull; The Great Masturbator (1929) &amp;bull; The Persistence of Memory (1931) &amp;bull; The Ghost of Vermeer of Delft Which Can Be Used As a Table (1934) &amp;bull; Morphological Echo (1934–36) &amp;bull; Archaeological Reminiscence of Millet's Angelus (1935) &amp;bull; Autumn Cannibalism (1936) &amp;bull; Soft Construction with Boiled Beans (Premonition of Civil War) (1936) &amp;bull; The Burning Giraffe (1937) &amp;bull; Metamorphosis of Narcissus (1937) &amp;bull; Swans Reflecting Elephants (1937) &amp;bull; Apparition of Face and Fruit Dish on a Beach (1938) &amp;bull; The Sublime Moment (1938) &amp;bull;
+			Shirley
+			Temple, The
+			Youngest, Most Sacred Monster of the Cinema in Her Time (1939) &amp;bull; The Face of War (1940) &amp;bull; Slave Market with the Disappearing Bust of Voltaire (1940) &amp;bull; Honey is Sweeter than Blood (1941) &amp;bull; Geopoliticus Child Watching the Birth of the New Man (1943) &amp;bull; Dream Caused by the Flight of a Bee Around a Pomegranate a Second Before Awakening (1944) &amp;bull; Galarina (1944–45) &amp;bull; Basket of Bread (1945) &amp;bull; The Temptation of Saint Anthony (1946) &amp;bull; The Elephants (1948) &amp;bull; Leda Atomica (1949) &amp;bull; The Madonna of Port Lligat (1949) &amp;bull; Christ of Saint John of the Cross (1951) &amp;bull; Galatea of the Spheres (1952) &amp;bull; The Disintegration of the Persistence of Memory (1952–54)
+			&amp;bull;
+			Crucifixion (Corpus
+			Hypercubus) (1954) &amp;bull; Young Virgin Auto-Sodomized by the Horns of Her Own Chastity (1954) &amp;bull; The Sacrament of the Last Supper (1955) &amp;bull; Living Still Life (1956) &amp;bull; The Discovery of America by Christopher Columbus (1958–59) &amp;bull; The Ecumenical Council (1959–60) &amp;bull; Tuna Fishing (1966–67) &amp;bull; The Hallucinogenic Toreador (1968–70) &amp;bull; La Toile Daligram (1972) &amp;bull; The Swallow's Tail (1983) Other works Writings: Un Chien Andalou (1929) &amp;bull; L'Age d'Or (1930) &amp;bull; Giraffes on Horseback Salad (1937) &amp;bull; Libretto for Bacchanale (1939) &amp;bull; The Secret Life of Salvador Dalí (1942, autobiography) Films: Un Chien Andalou (1929) &amp;bull; L'Age d'Or (1930) &amp;bull; Spellbound
+			(1945, dream
+			sequence) &amp;bull;
+			Impressions of Upper Mongolia (1975, narration)Animated films: Destino (1946, completed 2003) Logos: Chupa Chups Opera: Être Dieu (1985) Sculpture: Lobster Telephone (1936) &amp;bull; Mae West Lips Sofa (1937) Costumes: costumes for García Lorca's play Mariana Pineda (1927) Novels: Hidden Faces (1944)Related articles Castle of Púbol &amp;bull; Dalí Universe &amp;bull; Espace Dalí &amp;bull; Dalí Theatre and Museum &amp;bull; Salvador Dalí Museum &amp;bull; Salvador Dalí (film) &amp;bull; Little Ashes &amp;bull; Gala Dalí &amp;bull; Paranoiac-critical method File:Mona Lisa. jpg This painting-related article is a stub. You can help Wikipedia by expanding it. v&amp;thinsp;&amp;middot;&amp;thinsp;d&amp;thinsp;&amp;middot;&amp;thinsp;e Review of Salvador
+			Dali,
+			Metamorphosis Of Narcissus
+			Painting Salvador Dali, inspired by Roman poet, Publius Ovidius Naso (43 BC â AD 17/18) (wikipedia)[b b], painted Metamorphosis of Narcissus in 1937. In true surrealistic style, Daliâs painting contemplates the transformation, narcissism; the painting reveals âthe human drama of love, death and the transformation known in psychoanalysis as ânarcissismâ. â (Maurell i Constans, 2005). Coupled with a poem by the same name, Dali encourages the viewer to experience the poem and the painting together âin a state of distracted-fixationâ (Maurell i Constans, 2005). At first glance, the viewerâs eye is drawn to the golden body of Narcissus bent over a pool of water. From a distance, one can see the perfection of his body; moving in closer, however, we see the
+			flaws.
+			Narcissusâ head becomes a
+			cracked walnut. What appears to be a tuft of hair from a distance takes on the appearance of flames from the walnutâs crack on closer inspection. By concentrating on the painting, as Dali suggests, in âdistracted-fixationâ, the form of Narcissus disappears into the landscape of the painting, transforming into the stone-like hand on the right. Taking a closer look at the hand emerging from the banks of the water reveals the cracked egg from which the narcissus flower is bursting forth. On closer examination, the viewer will see that the crack in the egg is also the shadow, or reflection, of the flowerâs shape. The shape of the hand and of the form of Narcissus are identical. This repetition of form confuses the eye at first, the hand actually takes the
+			form of a
+			statue of the man. By
+			focusing on the thumbnail, with itâs crack so similar to the one in the egg, that the form is clarified. Note how Dali repeats the line of reflective demarkation on Narcissusâ form to the hand. Dali carries the reflection of Narcissus, the man through to the form of narcissus, the flower. It would seem that Dali used the egg, or oval, shape as a nod to his inspiration, the poem by Ovid. Additionally, by repeating, or echoing the forms throughout the painting, perhaps Dali is referencing Echoâs unrequited love</field>
+		<field name="city" update="set">http://dbpedia.org/resource/London</field>
+		<field name="thumbnail" update="add">http://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Metamorphosis_of_Narcissus.jpg/200px-Metamorphosis_of_Narcissus.jpg</field>
+		<field name="height" update="add">51</field>
+		<field name="artist" update="add">http://dbpedia.org/resource/Salvador_Dalí</field>
+		<field name="museum" update="add">http://dbpedia.org/resource/Tate_Modern</field>
+		<field name="title" update="add">Metamorphosis of Narcissus</field>
+		<field name="width" update="add">78</field>
+		<field name="imageSize" update="add">300</field>
+		<field name="image" update="add" />
+		<field name="photo-collection" update="add">http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Metamorphosis_of_Narcissus</field>
+		<field name="isPrimaryTopicOf" update="add">http://en.wikipedia.org/wiki/Metamorphosis_of_Narcissus</field>
+	</doc>
+	<doc>
+		<field name="uri">http://en.wikipedia.org/wiki/Metamorphosis_of_Narcissus</field>
+		<field name="primaryTopic" update="add">http://dbpedia.org/resource/Metamorphosis_of_Narcissus</field>
+	</doc>
+	<doc>
+		<field name="uri">http://dbpedia.org/resource/The_Metamorphosis_of_Narcissus</field>
+	</doc>
+	<doc>
+		<field name="uri">http://mpii.de/yago/resource/Metamorphosis_of_Narcissus</field>
+		<field name="sameAs" update="add">http://dbpedia.org/resource/Metamorphosis_of_Narcissus</field>
+	</doc>
+
+	<doc>
+		<field name="uri">http://dbpedia.org/resource/Metamorphosis_of_Narcissus</field>
+		<field name="label" update="add">EXTRA DATA to ATOMIC UPDATE!</field>
+	</doc>
+
+	<doc>
+		<field name="uri">http://dbpedia.org/resource/Metamorphosis_of_Narcissus</field>
+		<field name="rdfs:label" update="add">The "Metamorphosis of Narcissus" is a painting by the famous painter Dalí.</field>
+	</doc>
+
+</add>

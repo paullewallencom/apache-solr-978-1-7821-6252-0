@@ -1,0 +1,21 @@
+XML:
+<add overwrite="true">
+	<doc>
+		<field name="uri">http://en.wikipedia.org/wiki/Mona_Lisa</field>
+		<field name="title" update="set">Mona Lisa (modified)</field>
+		<field name="revision" update="inc">1</field>
+		<field name="museum" update="set">Another Museum</field>
+		<field name="_version_" >1</field>
+	</doc>
+</add>
+
+JSON:
+[
+  {
+    "uri" : "http://en.wikipedia.org/wiki/Mona_Lisa",
+    "title" : {"set":"Mona Lisa (modified)"},
+    "revision"  : {"inc":1},
+    "museum" : {"set":"Another Museum"},
+    "_version_" : 1
+  }
+]

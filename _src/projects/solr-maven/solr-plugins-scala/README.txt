@@ -1,0 +1,1 @@
+This module could be used as a pre-defined template for start writing custom components in Solr with scala.

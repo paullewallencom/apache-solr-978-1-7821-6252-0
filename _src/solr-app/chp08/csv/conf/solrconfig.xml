@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  Copyright 2013 Alfredo Serafini (http://seralf.it)
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<config>
+
+	<luceneMatchVersion>LUCENE_45</luceneMatchVersion>
+
+	<directoryFactory name="DirectoryFactory" class="solr.MMapDirectoryFactory" />
+
+	<codecFactory name="CodecFactory" class="solr.SchemaCodecFactory" />
+
+	<requestHandler name="standard" class="solr.StandardRequestHandler" default="true" />
+
+	<!-- we have installed the standard solr distribution under /SolrStarterBook/solr/ -->
+	<lib dir="../../../solr/dist/" regex="solr-dataimporthandler-.*\.jar" />
+	
+	
+	<!-- we can also use the SOLR_DIST environment variable (it points for convenience to solr/example)
+	<lib dir="${SOLR_DIST}/../dist/" regex="solr-dataimporthandler-.*\.jar" />
+	-->
+	
+	<requestHandler name="/admin/" class="org.apache.solr.handler.admin.AdminHandlers" />
+	<admin>
+		<defaultQuery>*:*</defaultQuery>
+	</admin>
+
+	<requestHandler name="/update" class="solr.UpdateRequestHandler" />
+
+	<requestHandler name="/analysis/field" class="solr.FieldAnalysisRequestHandler" />
+
+	<requestHandler name="/dih" class="org.apache.solr.handler.dataimport.DataImportHandler">
+		<lst name="defaults">
+			<str name="update.chain">data-extraction</str>
+			<str name="config">DIH_csv.xml</str>
+		</lst>
+	</requestHandler>
+
+	<updateRequestProcessorChain name="data-extraction">
+		<processor class="solr.StatelessScriptUpdateProcessorFactory">
+			<!-- <str name="script">normalize_entities.js</str> -->
+			<str name="script">extract_fields.js</str>
+		</processor>
+		<processor class="solr.LogUpdateProcessorFactory" />
+		<processor class="solr.RunUpdateProcessorFactory" />
+	</updateRequestProcessorChain>
+
+	<updateHandler class="solr.DirectUpdateHandler2">
+		<updateLog>
+			<str name="dir">${solr.ulog.dir:}</str>
+		</updateLog>
+		<autoCommit>
+			<maxTime>100</maxTime>
+			<maxDoc>200</maxDoc>
+			<openSearcher>false</openSearcher>
+		</autoCommit>
+	</updateHandler>
+
+</config>
+

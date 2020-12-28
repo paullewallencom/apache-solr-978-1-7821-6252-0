@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link rel="stylesheet" type="text/css"
+	href="http://view.jquery.com/trunk/plugins/autocomplete/demo/../
+jquery.autocomplete.css" />
+
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  
+
+<!-- <script type="text/javascript" -->
+<!-- 	src="http://view.jquery.com/trunk/plugins/autocomplete/lib/jquery.js"> -->
+<!-- </script> -->
+
+<!-- <script type='text/javascript' -->
+<!-- 	src='http://view.jquery.com/trunk/plugins/autocomplete/lib/jquery.bgiframe.min.js'> -->
+<!-- </script> -->
+
+<!-- <script type='text/javascript' -->
+<!-- 	src='http://view.jquery.com/trunk/plugins/autocomplete/lib/jquery.ajaxQueue.js'> -->
+<!-- </script> -->
+
+<!-- <script type='text/javascript' -->
+<!-- 	src='http://view.jquery.com/trunk/plugins/autocomplete/lib/thickbox-compressed.js'></script> -->
+
+<!-- <script type='text/javascript' -->
+<!-- 	src='http://view.jquery.com/trunk/plugins/autocomplete/jquery.autocomplete.js'> -->
+<!-- </script> -->
+
+<script type="text/javascript">
+    $(function() {
+        function formatForDisplay(doc) {
+            return doc.autosuggestion;
+}
+
+$("#autocomplete").autocomplete('http://localhost:8983/paintings/select?wt=json&json.wrf=', {
+    dataType: "jsonp",
+    width: 300,
+    extraParams: {rows: 10, qt: "autosuggestions"},
+    minChars: 3,
+    parse: function(data) {
+        return $.map(data.response.docs, function(doc) {
+            return {
+                data: doc,
+                value: doc.id.toString(),
+                result: doc.autosuggestion.toString()
+            }
+        });
+        },
+        formatItem: function(doc) {
+            return formatForDisplay(doc);
+        }
+    }).result(function(e, doc) {});
+});
+</script>
+   
+
+</head>
+<body>
+
+<div id="text">
+	<input id="autocomplete" type="text" />
+</div>
+
+
+
+</body>
+</html>
